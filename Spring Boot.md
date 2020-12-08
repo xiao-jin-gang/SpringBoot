@@ -340,8 +340,8 @@ K:空格V：表示一对键值对（空格必须有）；
 
 ```yaml
 server:
-	port: 8081
-	path: /hello
+ port: 8081
+ path: /hello
 ```
 
 属性和值是大小写敏感：
@@ -370,8 +370,8 @@ k:v：
 
 ```yaml
 friends:
-	lastName:  zhangsan
-	age: 20
+ lastName:  zhangsan
+ age: 20
 ```
 
 ​	行内写法：
@@ -541,6 +541,8 @@ public class Person {
 ```
 
 @ImportResource导入Spring的配置文件，让配置文件里面的内容生效；
+
+<img src="https://github.com/xiao-jin-gang/images/blob/main/微信图片_20201208111147.png">
 
 Spring Boot里面没有Spring的配置文件，我们自己编写的配置文件也不能自动识别；
 
