@@ -319,7 +319,7 @@ YAML：以**数据为****中心**，比json、xml等更适合做配置文件；
 
 ```yaml
 server:
-	port:8818
+ port:8818
 ```
 
 XML:
@@ -340,8 +340,8 @@ K:空格V：表示一对键值对（空格必须有）；
 
 ```yaml
 server:
-	port: 8081
-	path: /hello
+ port: 8081
+ path: /hello
 ```
 
 属性和值是大小写敏感：
@@ -370,8 +370,8 @@ k:v：
 
 ```yaml
 friends:
-	lastName:  zhangsan
-	age: 20
+ lastName:  zhangsan
+ age: 20
 ```
 
 ​	行内写法：
