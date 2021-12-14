@@ -78,13 +78,13 @@ make install //起确认作用
 
 5.redis的默认安装路径
 
- ```she
+ ```shell
  cd /usr/local/bin
  ```
 
 6.将redis配置文件复制到我们当前路径下
 
-```
+```shell
 mkdir zconfig #将我们的redis配置文件创建备份
 
 cp /usr/local/software/redis-6.2.6/redis.conf zconfig   #拷贝
@@ -101,8 +101,8 @@ daemonize no =》 daemonize yes
 
 8.启动redis服务
 
-```
-退一级回到bin目录下 启动
+```shell
+#退一级回到bin目录下 启动
 redis-server zconfig/redis.conf 
 #使用redis客户端进行连接
 redis-cli -p 6379
@@ -110,13 +110,13 @@ redis-cli -p 6379
 
 9.查看redis的进程是否开启
 
-```
+```shell
 ps -ef|grep redis
 ```
 
 10.如何关闭Redis服务命令
 
-```
+```shell
 #使用redis客户端进行连接
 redis-cli -p 6379
 #执行关闭命令
@@ -125,11 +125,15 @@ shut down
 exit  
 ```
 
+11.注意
 
-
-
-
-
+```shell
+#允许本地访问 从windows访问要注释掉
+bind 127.0.0.1 
+protected-mode no（保护模式改为no）
+#改配置文件 redis.conf 后台启动
+daemonize no =》 daemonize yes
+```
 
 
 
